@@ -24,6 +24,24 @@ public class Main {
         studentList.add(rabbi);
 
         School ghs = new School(teacherList, studentList);
+
+        tamasha.payFees(5000);
         System.out.println("GHS has earned $" + ghs.getTotalMoneyEarned());
+        rakshith.payFees(6000);
+        System.out.println("GHS has earned $" + ghs.getTotalMoneyEarned());
+
+        System.out.println("------Making SCHOOL PAY SALARY----");
+        lizzy.receiveSalary(lizzy.getSalary());
+        System.out.println("GHS has spent for salary to pay " + lizzy.getName()
+                + " and now has $" + ghs.getTotalMoneyEarned());
+
+        vanderhorn.receiveSalary(vanderhorn.getSalary());
+
+        System.out.println("GHS has spent for salary to pay " + vanderhorn.getName()
+                + " and now has $" + ghs.getTotalMoneyEarned());
+
+        melissa.receiveSalary(melissa.getSalary());
+
+        System.out.println(melissa);
     }
 }

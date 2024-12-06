@@ -39,7 +39,12 @@ public class Student {
         this.grade = grade;
     }
 
-    public void updateFees(int fees) {
+    public void payFees(int fees) {
         feesPaid += fees;
+        School.updateTotalMoneyEarned(feesPaid);
+    }
+
+    public int getRemainingFees() {
+        return feesTotal - feesPaid;
     }
 }
